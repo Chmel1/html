@@ -1,0 +1,54 @@
+.composition
+{
+  width: 600px;
+  height: 400px;
+  position: relative;
+
+    background:url(img/bg.jpg);
+}
+.composition_item
+{
+    position: absolute;
+}
+.composition_item.planet-1
+{
+    top:23px;
+    left: 186px;
+    z-index: 1;
+}
+.composition_item.planet-2
+{
+    top:75px;
+    left: 60px;
+    z-index: 2;
+}
+.composition_item.planet-3
+{
+    bottom:15px;
+    left: 140px;
+    z-index: 3;
+}
+.composition_item.spaceship
+{
+    top:150px;
+    left: 155px;
+    z-index: 2;
+}
+.composition_item.meteor
+{
+    top: 90px;
+    right: 110px;
+    z-index: 1;
+}
+.composition_item.UFO
+{
+    bottom: 50px;
+    left: 115px;
+    z-index: 4;
+}
+.composition_item.superman
+{
+    bottom: 0px;
+    right: 33px;
+    z-index: 3;
+}
