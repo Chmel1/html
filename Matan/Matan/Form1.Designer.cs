@@ -45,7 +45,7 @@ using System.Data.SqlClient;
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 24F, FontStyle.Bold);
-            label1.Location = new Point(51, 24);
+            label1.Location = new Point(61, 23);
             label1.Name = "label1";
             label1.Size = new Size(228, 45);
             label1.TabIndex = 0;
@@ -88,7 +88,7 @@ using System.Data.SqlClient;
             // button1
             // 
             button1.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            button1.Location = new Point(116, 223);
+            button1.Location = new Point(128, 223);
             button1.Name = "button1";
             button1.Size = new Size(83, 44);
             button1.TabIndex = 5;

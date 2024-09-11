@@ -34,56 +34,55 @@ namespace Matan
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ClassDataBase dataBase = new ClassDataBase();
-
             var login = Login_for_reg.Text;
             var password = Password_for_reg.Text;
 
-            string request_for_reg = $"Insert into Users(Login,Password) values ('{login}','{password}')";
+            // Проверка на наличие пользователя с таким же логином
+            if (checkuser(login))
+            {
+                MessageBox.Show("Логин уже используется! Пожалуйста, выберите другой.");
+                return; // Если пользователь уже существует, прерываем выполнение
+            }
 
+            // Если логин уникальный, добавляем пользователя
+            string request_for_reg = "INSERT INTO Users(Login, Password) VALUES (@username, @password)";
             SqlCommand command = new SqlCommand(request_for_reg, dataBase.getConnection());
+            command.Parameters.AddWithValue("@username", login);
+            command.Parameters.AddWithValue("@password", password);
 
             dataBase.openConnection();
-            if(command.ExecuteNonQuery()==1)
+
+            // Выполняем SQL-запрос
+            if (command.ExecuteNonQuery() == 1)
             {
-                MessageBox.Show("Аккаунт зарегестрирован");
+                MessageBox.Show("Аккаунт зарегистрирован успешно.");
                 Form1 form = new Form1();
                 this.Hide();
                 form.ShowDialog();
             }
             else
             {
-                MessageBox.Show("Не удалось зарегестрировать аккаунт");
+                MessageBox.Show("Не удалось зарегистрировать аккаунт.");
             }
+
             dataBase.closeConnection();
         }
 
-        private Boolean checkuser()
+        // Метод для проверки, существует ли пользователь с таким логином
+        private bool checkuser(string login)
         {
-            var loginUser = Login_for_reg.Text;
-            var passwordUser = Password_for_reg.Text;
-
             SqlDataAdapter adapter = new SqlDataAdapter();
             DataTable table = new DataTable();
 
-            string request_check_user = $"Select User_Id,Login,Password From Users where Login = '{loginUser}' and Password = '{passwordUser}'";
+            string request_check_user = "SELECT User_Id FROM Users WHERE Login = @username";
             SqlCommand command = new SqlCommand(request_check_user, dataBase.getConnection());
+            command.Parameters.AddWithValue("@username", login);
+
             adapter.SelectCommand = command;
             adapter.Fill(table);
 
-            if(table.Rows.Count >0)
-            {
-                MessageBox.Show("Логин уже используется");
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-        private void label4_Click(object sender, EventArgs e)
-        {
-
+            // Если найден хотя бы один пользователь, возвращаем true (логин уже существует)
+            return table.Rows.Count > 0;
         }
 
         private void Registration_Load(object sender, EventArgs e)

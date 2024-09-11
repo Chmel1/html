@@ -10,7 +10,7 @@ namespace Matan
 {
     internal class ClassDataBase
     {
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Влад\source\repos\Matan\Matan\Databaseformatan.mdf;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Влад\html\Matan\Matan\Databaseformatan.mdf;Integrated Security=True");
 
         public void openConnection()
         {

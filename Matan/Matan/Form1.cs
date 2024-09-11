@@ -6,7 +6,7 @@ namespace Matan
 {
     public partial class Form1 : Form
     {
-        ClassDataBase database = new ClassDataBase();
+        ClassDataBase dataBase = new ClassDataBase();
 
         private SqlConnection sqlConnection = null;
         public Form1()
@@ -29,7 +29,7 @@ namespace Matan
             DataTable table = new DataTable();
 
             string request_string = $"Select Login,Password From Users where Login = '{login_user}' and Password ='{password_user}'";
-            SqlCommand command = new SqlCommand(request_string, database.getConnection());
+            SqlCommand command = new SqlCommand(request_string, dataBase.getConnection());
             adapter.SelectCommand = command; 
             adapter.Fill(table);
 

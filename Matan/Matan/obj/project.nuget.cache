@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hv06cExXxbgjvCWYmU2CabtEX8MDEDSCxC/vQeBl5Pekzf+Cmq2V7fTrvazSxd3OtFSdmLlZMhlzhfMFHRv2yg==",
+  "dgSpecHash": "zdEWj97juio=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Влад\\source\\repos\\Matan\\Matan\\Matan.csproj",
+  "projectFilePath": "C:\\Users\\Влад\\html\\Matan\\Matan\\Matan.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Влад\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Влад\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
