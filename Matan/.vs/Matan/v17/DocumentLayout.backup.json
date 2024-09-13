@@ -34,12 +34,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
@@ -48,7 +44,7 @@
               "RelativeDocumentMoniker": "Matan\\ClassDataBase.cs",
               "ToolTip": "C:\\Users\\\u0412\u043B\u0430\u0434\\html\\Matan\\Matan\\ClassDataBase.cs",
               "RelativeToolTip": "Matan\\ClassDataBase.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAANAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-11T10:12:44.904Z"
             },
@@ -60,9 +56,10 @@
               "RelativeDocumentMoniker": "Matan\\Registration.cs",
               "ToolTip": "C:\\Users\\\u0412\u043B\u0430\u0434\\html\\Matan\\Matan\\Registration.cs",
               "RelativeToolTip": "Matan\\Registration.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAowC0AAAAmAAAA",
+              "ViewState": "AgIAADsAAAAAAAAAAAAIwCMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T10:08:47.347Z"
+              "WhenOpened": "2024-09-11T10:08:47.347Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -83,9 +80,9 @@
               "Title": "MainForm.cs",
               "DocumentMoniker": "C:\\Users\\\u0412\u043B\u0430\u0434\\html\\Matan\\Matan\\MainForm.cs",
               "RelativeDocumentMoniker": "Matan\\MainForm.cs",
-              "ToolTip": "C:\\Users\\\u0412\u043B\u0430\u0434\\html\\Matan\\Matan\\MainForm.cs",
-              "RelativeToolTip": "Matan\\MainForm.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAlwCEAAAAgAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\\u0412\u043B\u0430\u0434\\html\\Matan\\Matan\\MainForm.cs*",
+              "RelativeToolTip": "Matan\\MainForm.cs*",
+              "ViewState": "AgIAACMAAAAAAAAAAAAhwDsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-11T10:07:30.142Z",
               "EditorCaption": ""
@@ -99,7 +96,8 @@
               "ToolTip": "C:\\Users\\\u0412\u043B\u0430\u0434\\html\\Matan\\Matan\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]*",
               "RelativeToolTip": "Matan\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T10:04:26.036Z"
+              "WhenOpened": "2024-09-11T10:04:26.036Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
             },
             {
               "$type": "Document",
