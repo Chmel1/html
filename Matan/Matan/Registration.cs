@@ -87,7 +87,7 @@ namespace Matan
 
         private void Registration_Load(object sender, EventArgs e)
         {
-            Password_for_reg.PasswordChar = '☯';
+            Password_for_reg.PasswordChar = '*';
         }
     }
 }

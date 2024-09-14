@@ -58,7 +58,7 @@ namespace Matan
             SqlDataAdapter adapter = new SqlDataAdapter();
             DataTable table = new DataTable();
 
-            string request_string = $"Select first_name, last_name, middle_name, date_of_birth, gender, contact_number, email, address, insurance_policy_number, insurance_company  From Patients";
+            string request_string = $"Select patient_id,first_name, last_name, middle_name, date_of_birth, gender, contact_number, email, address, insurance_policy_number, insurance_company  From Patients";
             SqlCommand command = new SqlCommand(request_string, dataBase.getConnection());
             adapter.SelectCommand = command;
             adapter.Fill(table);
@@ -153,6 +153,24 @@ namespace Matan
             adapter.SelectCommand = command;
             adapter.Fill(table);
             dataGridView1.DataSource = table;
+        }
+
+        private void toolStrip1_ItemClicked_1(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripButton8_Click(object sender, EventArgs e)
+        {
+            Enter_Data frm1 = new Enter_Data();
+            this.Hide();
+            frm1.ShowDialog();
+            this.Show();
         }
     }
 }

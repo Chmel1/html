@@ -53,3 +53,4 @@ C:\Users\Влад\html\Matan\Matan\obj\Debug\net8.0-windows\refint\Matan.dll
 C:\Users\Влад\html\Matan\Matan\obj\Debug\net8.0-windows\Matan.pdb
 C:\Users\Влад\html\Matan\Matan\obj\Debug\net8.0-windows\Matan.genruntimeconfig.cache
 C:\Users\Влад\html\Matan\Matan\obj\Debug\net8.0-windows\ref\Matan.dll
+C:\Users\Влад\html\Matan\Matan\obj\Debug\net8.0-windows\Matan.Enter_Data.resources

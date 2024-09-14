@@ -49,7 +49,7 @@ namespace Matan
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Password.PasswordChar = '☯';
+            Password.PasswordChar = '*';
 
         }
             private void button2_Click(object sender, EventArgs e)
