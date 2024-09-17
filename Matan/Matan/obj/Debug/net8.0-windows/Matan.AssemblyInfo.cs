@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Matan")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+302e32d18bee49a8251ee0604bec4029a624c7b7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a8aa99a94acea8ab9455637dd42b1bd589e402fb")]
 [assembly: System.Reflection.AssemblyProductAttribute("Matan")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Matan")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -124,6 +124,12 @@
             button_Precriptions = new Button();
             button_Medical_history = new Button();
             button_Examinations = new Button();
+            label49 = new Label();
+            Label50 = new Label();
+            label51 = new Label();
+            Login_TextBox = new TextBox();
+            Password_TextBox = new TextBox();
+            button1 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -591,6 +597,7 @@
             textBox3.ReadOnly = true;
             textBox3.Size = new Size(404, 23);
             textBox3.TabIndex = 64;
+            textBox3.TextChanged += textBox3_TextChanged;
             // 
             // textBox4
             // 
@@ -934,11 +941,69 @@
             button_Examinations.UseVisualStyleBackColor = true;
             button_Examinations.Click += button_Examinations_Click;
             // 
+            // label49
+            // 
+            label49.AutoSize = true;
+            label49.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            label49.Location = new Point(261, 839);
+            label49.Name = "label49";
+            label49.Size = new Size(144, 25);
+            label49.TabIndex = 111;
+            label49.Text = "Пользователь";
+            // 
+            // Label50
+            // 
+            Label50.AutoSize = true;
+            Label50.Location = new Point(55, 879);
+            Label50.Name = "Label50";
+            Label50.Size = new Size(37, 15);
+            Label50.TabIndex = 112;
+            Label50.Text = "Login";
+            // 
+            // label51
+            // 
+            label51.AutoSize = true;
+            label51.Location = new Point(47, 919);
+            label51.Name = "label51";
+            label51.Size = new Size(59, 15);
+            label51.TabIndex = 113;
+            label51.Text = "Password";
+            // 
+            // Login_TextBox
+            // 
+            Login_TextBox.Location = new Point(150, 879);
+            Login_TextBox.Name = "Login_TextBox";
+            Login_TextBox.Size = new Size(404, 23);
+            Login_TextBox.TabIndex = 114;
+            // 
+            // Password_TextBox
+            // 
+            Password_TextBox.Location = new Point(150, 919);
+            Password_TextBox.Name = "Password_TextBox";
+            Password_TextBox.Size = new Size(404, 23);
+            Password_TextBox.TabIndex = 115;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(257, 959);
+            button1.Name = "button1";
+            button1.Size = new Size(147, 37);
+            button1.TabIndex = 116;
+            button1.Text = "Ввести данные";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click_1;
+            // 
             // Enter_Data
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1904, 1061);
+            ClientSize = new Size(1904, 1041);
+            Controls.Add(button1);
+            Controls.Add(Password_TextBox);
+            Controls.Add(Login_TextBox);
+            Controls.Add(label51);
+            Controls.Add(Label50);
+            Controls.Add(label49);
             Controls.Add(button_Examinations);
             Controls.Add(button_Medical_history);
             Controls.Add(button_Precriptions);
@@ -1140,5 +1205,11 @@
         private Button button_Precriptions;
         private Button button_Medical_history;
         private Button button_Examinations;
+        private Label label49;
+        private Label Label50;
+        private Label label51;
+        private TextBox Login_TextBox;
+        private TextBox Password_TextBox;
+        private Button button1;
     }
 }

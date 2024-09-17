@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Windows.Forms.VisualStyles;
+using Microsoft.VisualBasic.Logging;
+using System.Collections;
 
 namespace Matan
 {
@@ -434,30 +436,117 @@ namespace Matan
                            "VALUES (@PatientID, @Date, @Medications, @Dosage, @Recommendations)";
 
             // Используем SqlConnection и SqlCommand для выполнения запроса
-            
-                using (SqlCommand cmd = new SqlCommand(query, dataBase.getConnection()))
-                {
-                    // Добавляем параметры для предотвращения SQL-инъекций
-                    cmd.Parameters.AddWithValue("@PatientID", patientId);
-                    cmd.Parameters.AddWithValue("@Date", date);
-                    cmd.Parameters.AddWithValue("@Medications", medications);
-                    cmd.Parameters.AddWithValue("@Dosage", dosage);
-                    cmd.Parameters.AddWithValue("@Recommendations", recommendations);
 
-                    try
-                    {
-                        // Открываем подключение и выполняем запрос
-                        dataBase.openConnection();
-                        cmd.ExecuteNonQuery();
-                        MessageBox.Show("Рецепт успешно добавлен.");
-                    }
-                    catch (Exception ex)
-                    {
-                        // Обработка ошибок
-                        MessageBox.Show("Ошибка: " + ex.Message);
-                    }
+            using (SqlCommand cmd = new SqlCommand(query, dataBase.getConnection()))
+            {
+                // Добавляем параметры для предотвращения SQL-инъекций
+                cmd.Parameters.AddWithValue("@PatientID", patientId);
+                cmd.Parameters.AddWithValue("@Date", date);
+                cmd.Parameters.AddWithValue("@Medications", medications);
+                cmd.Parameters.AddWithValue("@Dosage", dosage);
+                cmd.Parameters.AddWithValue("@Recommendations", recommendations);
+
+                try
+                {
+                    // Открываем подключение и выполняем запрос
+                    dataBase.openConnection();
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Рецепт успешно добавлен.");
                 }
-            
+                catch (Exception ex)
+                {
+                    // Обработка ошибок
+                    MessageBox.Show("Ошибка: " + ex.Message);
+                }
+            }
+
+        }
+        private bool IsLoginExists(string login)
+        {
+            bool exists = false;
+
+            // SQL-запрос для проверки наличия логина
+            string query = "SELECT COUNT(1) FROM Users WHERE Login = @Login";
+
+            using (SqlCommand cmd = new SqlCommand(query, dataBase.getConnection()))
+            {
+                // Добавляем параметр для предотвращения SQL-инъекций
+                cmd.Parameters.AddWithValue("@Login", login);
+
+                try
+                {
+                    // Открываем соединение
+                    dataBase.openConnection();
+
+                    // Выполняем запрос и получаем результат
+                    int count = (int)cmd.ExecuteScalar();
+
+                    // Если найдено хотя бы одно совпадение, логин существует
+                    exists = count > 0;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Ошибка при проверке логина: " + ex.Message);
+                }
+                finally
+                {
+                    // Закрываем соединение
+                    dataBase.closeConnection();
+                }
+            }
+
+            return exists;
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            string Login =Login_TextBox.Text;
+            string Password = Password_TextBox.Text;
+
+            if(string.IsNullOrEmpty(Login) || string.IsNullOrEmpty(Password))
+            {
+                MessageBox.Show("Пожалуйста, введите логин и пароль.");
+                return;
+            }
+
+            if (IsLoginExists(Login))
+            {
+                MessageBox.Show("Пользователь с таким логином уже существует. Пожалуйста, выберите другой логин.");
+                return;
+            }
+
+            string request_for_registration = "INSERT INTO Users (Login, Password, Role) VALUES (@Login, @Password, @Role)";
+
+            using (SqlCommand cmd = new SqlCommand(request_for_registration, dataBase.getConnection()))
+            {
+                // Добавляем параметры для предотвращения SQL-инъекций
+                cmd.Parameters.AddWithValue("@Login", Login);
+                cmd.Parameters.AddWithValue("@Password", Password);
+                cmd.Parameters.AddWithValue("@Role", "Doctor"); // Устанавливаем роль doctor
+
+                try
+                {
+                    // Открываем подключение и выполняем запрос
+                    dataBase.openConnection();
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Пользователь успешно добавлен с ролью doctor.");
+                }
+                catch (Exception ex)
+                {
+                    // Обработка ошибок
+                    MessageBox.Show("Ошибка: " + ex.Message);
+                }
+                finally
+                {
+                    // Закрываем соединение
+                    dataBase.closeConnection();
+                }
+            }
         }
     }
 }

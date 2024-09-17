@@ -34,6 +34,8 @@
             Login_for_reg = new TextBox();
             Password_for_reg = new TextBox();
             button1 = new Button();
+            label4 = new Label();
+            Email_for_reg = new TextBox();
             SuspendLayout();
             // 
             // label1
@@ -51,7 +53,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label2.Location = new Point(34, 113);
+            label2.Location = new Point(34, 129);
             label2.Name = "label2";
             label2.Size = new Size(59, 21);
             label2.TabIndex = 1;
@@ -61,7 +63,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label3.Location = new Point(34, 162);
+            label3.Location = new Point(34, 176);
             label3.Name = "label3";
             label3.Size = new Size(70, 21);
             label3.TabIndex = 2;
@@ -70,14 +72,14 @@
             // 
             // Login_for_reg
             // 
-            Login_for_reg.Location = new Point(108, 111);
+            Login_for_reg.Location = new Point(110, 127);
             Login_for_reg.Name = "Login_for_reg";
             Login_for_reg.Size = new Size(152, 23);
             Login_for_reg.TabIndex = 4;
             // 
             // Password_for_reg
             // 
-            Password_for_reg.Location = new Point(108, 164);
+            Password_for_reg.Location = new Point(110, 174);
             Password_for_reg.Name = "Password_for_reg";
             Password_for_reg.Size = new Size(152, 23);
             Password_for_reg.TabIndex = 5;
@@ -93,11 +95,30 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            label4.Location = new Point(34, 92);
+            label4.Name = "label4";
+            label4.Size = new Size(58, 21);
+            label4.TabIndex = 8;
+            label4.Text = "Почта";
+            // 
+            // Email_for_reg
+            // 
+            Email_for_reg.Location = new Point(110, 92);
+            Email_for_reg.Name = "Email_for_reg";
+            Email_for_reg.Size = new Size(152, 23);
+            Email_for_reg.TabIndex = 9;
+            // 
             // Registration
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(290, 290);
+            Controls.Add(Email_for_reg);
+            Controls.Add(label4);
             Controls.Add(button1);
             Controls.Add(Password_for_reg);
             Controls.Add(Login_for_reg);
@@ -119,5 +140,7 @@
         private TextBox Login_for_reg;
         private TextBox Password_for_reg;
         private Button button1;
+        private Label label4;
+        private TextBox Email_for_reg;
     }
 }

@@ -22,29 +22,54 @@ namespace Matan
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var password_user = Password.Text;
-            var login_user = login.Text;
+            string log1n = login.Text;
+            string password = Password.Text;
 
-            SqlDataAdapter adapter = new SqlDataAdapter();
-            DataTable table = new DataTable();
+            // Проверяем учетные данные
+            string role = AuthenticateUser(log1n, password);
 
-            string request_string = $"Select Login,Password From Users where Login = '{login_user}' and Password ='{password_user}'";
-            SqlCommand command = new SqlCommand(request_string, dataBase.getConnection());
-            adapter.SelectCommand = command; 
-            adapter.Fill(table);
-
-            if (table.Rows.Count == 1)
+            if (role != null)
             {
-                MainForm frm1 = new MainForm();
-                this.Hide();
-                frm1.ShowDialog();
-                this.Show();
+                // Если авторизация успешна, открываем новую форму и передаем роль
+                MainForm mainForm = new MainForm(role,log1n);
+                mainForm.Show();
+                this.Hide();  // Скрываем форму авторизации
             }
             else
             {
-                MessageBox.Show("Ошибка в логине или пароле");
+                MessageBox.Show("Неверный логин или пароль!");
             }
 
+        }
+        private string AuthenticateUser(string login, string password)
+        {
+  
+            string query = "SELECT Role FROM Users WHERE Login = @Login AND Password = @Password";
+
+            
+                try
+                {
+                    dataBase.openConnection();
+                    using (SqlCommand command = new SqlCommand(query, dataBase.getConnection()))
+                    {
+                        command.Parameters.AddWithValue("@Login", login);
+                        command.Parameters.AddWithValue("@Password", password);
+
+                        object result = command.ExecuteScalar();
+
+                        if (result != null)
+                        {
+                            return result.ToString();  // Возвращаем роль, если логин и пароль верны
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Ошибка подключения к базе данных: " + ex.Message);
+                }
+            
+
+            return null;  // Возвращаем null, если авторизация не удалась
         }
 
         private void Form1_Load(object sender, EventArgs e)

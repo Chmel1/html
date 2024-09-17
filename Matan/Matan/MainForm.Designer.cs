@@ -39,16 +39,18 @@
             toolStripButton7 = new ToolStripButton();
             toolStripButton8 = new ToolStripButton();
             dataGridView1 = new DataGridView();
+            label1 = new Label();
             toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // toolStrip1
             // 
+            toolStrip1.Dock = DockStyle.None;
             toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripButton1, toolStripButton2, toolStripButton3, toolStripButton4, toolStripButton5, toolStripButton6, toolStripButton7, toolStripButton8 });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(881, 25);
+            toolStrip1.Size = new Size(746, 25);
             toolStrip1.TabIndex = 0;
             toolStrip1.Text = "toolStrip1";
             toolStrip1.ItemClicked += toolStrip1_ItemClicked_1;
@@ -136,18 +138,31 @@
             // 
             // dataGridView1
             // 
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllHeaders;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Dock = DockStyle.Fill;
-            dataGridView1.Location = new Point(0, 25);
+            dataGridView1.Location = new Point(0, 45);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(881, 379);
+            dataGridView1.ReadOnly = true;
+            dataGridView1.Size = new Size(1038, 360);
             dataGridView1.TabIndex = 1;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(835, 5);
+            label1.Name = "label1";
+            label1.Size = new Size(71, 15);
+            label1.TabIndex = 2;
+            label1.Text = "Ваша Роль:";
             // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(881, 404);
+            ClientSize = new Size(1033, 404);
+            Controls.Add(label1);
             Controls.Add(dataGridView1);
             Controls.Add(toolStrip1);
             Name = "MainForm";
@@ -172,5 +187,6 @@
         private ToolStripButton toolStripButton6;
         private ToolStripButton toolStripButton7;
         private ToolStripButton toolStripButton8;
+        private Label label1;
     }
 }
