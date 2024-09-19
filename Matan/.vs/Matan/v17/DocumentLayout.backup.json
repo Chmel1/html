@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\\u0412\u043B\u0430\u0434\\html\\Matan\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4FFD1324-4D70-411B-9F7D-9EAC9DD34576}|Matan\\Matan.csproj|c:\\users\\\u0432\u043B\u0430\u0434\\html\\matan\\matan\\enter_data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4FFD1324-4D70-411B-9F7D-9EAC9DD34576}|Matan\\Matan.csproj|solutionrelative:matan\\enter_data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4FFD1324-4D70-411B-9F7D-9EAC9DD34576}|Matan\\Matan.csproj|c:\\users\\\u0432\u043B\u0430\u0434\\html\\matan\\matan\\enter_data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4FFD1324-4D70-411B-9F7D-9EAC9DD34576}|Matan\\Matan.csproj|solutionrelative:matan\\enter_data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4FFD1324-4D70-411B-9F7D-9EAC9DD34576}|Matan\\Matan.csproj|c:\\users\\\u0432\u043B\u0430\u0434\\html\\matan\\matan\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4FFD1324-4D70-411B-9F7D-9EAC9DD34576}|Matan\\Matan.csproj|solutionrelative:matan\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4FFD1324-4D70-411B-9F7D-9EAC9DD34576}|Matan\\Matan.csproj|c:\\users\\\u0432\u043B\u0430\u0434\\html\\matan\\matan\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{4FFD1324-4D70-411B-9F7D-9EAC9DD34576}|Matan\\Matan.csproj|C:\\Users\\\u0412\u043B\u0430\u0434\\html\\Matan\\matan\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4FFD1324-4D70-411B-9F7D-9EAC9DD34576}|Matan\\Matan.csproj|solutionrelative:matan\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4FFD1324-4D70-411B-9F7D-9EAC9DD34576}|Matan\\Matan.csproj|c:\\users\\\u0432\u043B\u0430\u0434\\html\\matan\\matan\\enter_data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4FFD1324-4D70-411B-9F7D-9EAC9DD34576}|Matan\\Matan.csproj|solutionrelative:matan\\enter_data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{4FFD1324-4D70-411B-9F7D-9EAC9DD34576}|Matan\\Matan.csproj|c:\\users\\\u0432\u043B\u0430\u0434\\html\\matan\\matan\\enter_data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FFD1324-4D70-411B-9F7D-9EAC9DD34576}|Matan\\Matan.csproj|solutionrelative:matan\\enter_data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4FFD1324-4D70-411B-9F7D-9EAC9DD34576}|Matan\\Matan.csproj|c:\\users\\\u0432\u043B\u0430\u0434\\html\\matan\\matan\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "Matan\\MainForm.cs",
               "ToolTip": "C:\\Users\\\u0412\u043B\u0430\u0434\\html\\Matan\\Matan\\MainForm.cs",
               "RelativeToolTip": "Matan\\MainForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAO8AAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-17T14:10:22.939Z",
               "EditorCaption": ""
@@ -54,12 +54,11 @@
               "ToolTip": "C:\\Users\\\u0412\u043B\u0430\u0434\\html\\Matan\\Matan\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "RelativeToolTip": "Matan\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T14:10:19.581Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+              "WhenOpened": "2024-09-17T14:10:19.581Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Enter_Data.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "DocumentMoniker": "C:\\Users\\\u0412\u043B\u0430\u0434\\html\\Matan\\Matan\\Enter_Data.cs",
               "RelativeDocumentMoniker": "Matan\\Enter_Data.cs",
@@ -71,7 +70,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Enter_Data.cs",
               "DocumentMoniker": "C:\\Users\\\u0412\u043B\u0430\u0434\\html\\Matan\\Matan\\Enter_Data.cs",
               "RelativeDocumentMoniker": "Matan\\Enter_Data.cs",
@@ -79,8 +78,7 @@
               "RelativeToolTip": "Matan\\Enter_Data.cs",
               "ViewState": "AgIAAP4BAAAAAAAAAAAqwBMCAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T12:21:09.486Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-14T12:21:09.486Z"
             },
             {
               "$type": "Document",
@@ -92,8 +90,7 @@
               "RelativeToolTip": "Matan\\Form1.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAAwwDEAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T12:27:09.278Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-14T12:27:09.278Z"
             }
           ]
         }

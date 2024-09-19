@@ -1,0 +1,49 @@
+body
+{
+    font-family: Arial, sans-serif;
+    font-size: 16;
+
+    color: #000;
+    background-color: #f8f8f8;
+}
+*
+{
+    box-sizing: border-box;
+}
+.Form
+{
+    width: 320px;
+    height: 320px;
+    padding: 15px;
+    background-color: #fff;
+    margin: 200px auto;
+    text-align: center
+}
+.input
+{
+    display: block;
+    width: 100%;
+    border-color: #ccc;
+    font-family: inherit;
+    font-size: 16;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+}
+.btn
+{
+    display: block;
+    width: 100%;
+    padding: 8px 10px;
+
+    background-color: #1cbc11;
+    cursor: pointer ;
+    border: 0;
+    
+    font-family: inherit;
+    font-size: 16;
+    color: #fff;
+}
+.btn:hover
+{
+    background-color: #14a20a;
+}

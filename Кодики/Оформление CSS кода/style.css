@@ -1,0 +1,65 @@
+.product
+{
+    max-width: 350px;
+    margin: 0px auto 0px auto;
+
+    background-color: #ffffff;
+    box-shadow: 0 0 76px rgba(231, 231, 231, 0.66); 
+}
+
+.product-header 
+{
+    display: flex;
+}
+
+.product-header-left 
+{
+    width:25%;
+    margin: 2rem 0 0 0;
+    padding: 0px 0 0 0px;
+
+    list-style: none;
+    text-align: center;
+}
+
+.product-header-left li 
+{
+    margin-bottom: 2.5rem;
+}
+.product-header-btn
+{
+    padding: 0px;
+    border: 0;
+
+    background: none;
+    cursor: pointer
+}
+.product-header-right 
+{
+    width: 75%;
+
+    position: relative;
+}
+.product-label 
+{
+    bottom: 1rem;
+    width: 50px;
+
+    background-color: #333;
+    color:#fff;
+
+    text-transform: uppercase;
+    position: absolute;
+
+    height: 50px;
+    font-weight: 500;
+    border-radius: 50%;
+
+    font: 'Roboto',sans-serif;
+    text-align: center;
+
+    font-size: 1.4rem;
+    line-height: 50px;
+    font-weight: 500;
+    left: -25px
+}
