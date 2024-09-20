@@ -1,0 +1,35 @@
+body
+{
+    font-family: Arial,sans-serif;
+    font-size: 16px;
+    color: #000;
+}
+.Hernya
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.Hernya-item
+{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 5px;
+}
+.Hernya-item:not(:last-child):after
+{
+    content: ">";
+    margin-left: 5px;
+}
+.Hernya-link
+{
+    text-decoration: none;
+    color:#0b56ea;
+}
+.Hernya-link:not(span):hover {
+    text-decoration: underline;
+  }
+.Hernya-link.current
+{
+    color: #333;
+}
