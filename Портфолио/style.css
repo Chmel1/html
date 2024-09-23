@@ -1,0 +1,98 @@
+body
+{
+    background-image:url(images/173481-brett_miller-sem_dajan-pesnya-dizer-albom-3840x2160.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial,sans-serif;
+    font-size: 16px;
+    color: rgb(59, 43, 43);
+}
+
+*{
+text-decoration: none;
+opacity: 0;
+animation: ani 1.5s forwards;
+}
+
+a
+{
+    color: rgb(5, 63, 60);
+    transition: color 0.3s;
+}
+
+.Header
+{   
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-image: url(images/173481-brett_miller-sem_dajan-pesnya-dizer-albom-3840x2160.jpg);
+    z-index: 1000;
+
+
+}
+
+.information-list
+{
+    display:flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    
+}
+section
+{
+    width: 25%; /* Ширина каждого окна (секции) - можно регулировать по необходимости */
+    background-color: #e0ccbb;
+    border: 2px solid #ddd;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+    margin: 100px;
+    padding: 40px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 20px;
+    border-color: rgb(211, 100, 100);
+    color: black;
+}
+
+
+.inforamation
+{
+    display:flex;
+    justify-content: space-around; /* Пространство между секциями */
+    flex-wrap: wrap; /* Разбивка секций по ширине экрана */
+    
+}
+
+.About-list
+{
+font-size: 1.5em;
+}
+.Skills-list
+{
+font-size: 1.5em;
+}
+.Contact-list
+{
+font-size: 1.5em;
+}
+.Projects-list
+{
+font-size: 1.5em;
+}
+.vk,.tg,.git
+{
+    color: #333333;
+}
+
+@media only screen and (max-width: 768px)
+{
+    section
+    {
+        width: 100%;
+    }
+}
+@keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }

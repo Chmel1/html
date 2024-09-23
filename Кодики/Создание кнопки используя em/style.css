@@ -1,0 +1,45 @@
+body
+{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #000;
+    
+}
+
+.btn1
+{
+    display: inline-block;
+    border-color: red;
+    font-size: 0.7em;
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #ccc;
+    color: #000;
+    border-radius: 0.8em;
+    text-decoration: none;
+}
+
+.btn2
+{
+    cursor: pointer;
+    font-size: 1.5em;
+    border-radius: 0.8em;
+    border-color: none;
+    padding: 1em;
+    margin-right: 0.6em; 
+
+}
+.btn3
+{
+    cursor: pointer;
+    font-size: 1.8em;
+    padding: 1.2em;
+    border-color: none;
+    border-radius: 0.8em;
+    
+}
+.btn1:hover
+{
+    background-color: #a1a1a1;
+    color: #000;
+}
