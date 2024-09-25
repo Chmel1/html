@@ -1,0 +1,72 @@
+/* Контейнер для центрирования карусели по центру страницы */
+body, html {
+    height: 100%; /* Высота body и html на 100%, чтобы использовать всю высоту окна */
+    margin: 0; /* Убираем отступы по умолчанию */
+    display: flex; /* Включаем Flexbox для центрирования */
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+    background-color: #fff; /* Цвет фона */
+    font-family: Arial, sans-serif;
+    font-size: 26px;
+    color: #ffffff;
+  }
+  h4
+  {
+    font-size: 32px;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .carousel-container {
+    position: relative; /* Позиционирование кнопок относительно контейнера */
+    width: 750px; /* Ширина карусели */
+    height: 550px;
+    overflow: hidden; /* Прячем элементы, выходящие за пределы контейнера */
+    background-color: #fff; /* Цвет фона карусели */
+    
+  }
+  
+  .carousel-track {
+    display: flex; /* Располагаем элементы в строку */
+    transition: transform 1s ease-in-out; /* Анимация для перелистывания */
+  }
+  
+  .carousel-item {
+    min-width: 750px; /* Ширина каждого элемента карусели */
+    min-height: 550px;
+    padding: 20px;
+    margin-right: 50px; /* Отступ между блоками */
+    box-sizing: border-box;
+    text-align: center;
+    background-color:#000;
+    border-radius: 10px;
+  }
+  
+  /* Стили для кнопок */
+  button {
+    position: absolute; /* Абсолютное позиционирование кнопок относительно контейнера */
+    top: 50%; /* Центрируем кнопки по вертикали относительно карусели */
+    transform: translateY(-100%); /* Сдвигаем кнопки вверх на 50%, чтобы они были ровно по центру */
+    padding: 10px 20px;
+    font-size: 32px;
+    cursor: pointer;
+    width: 50px;
+    height: 20px;
+    background-color: #fff; /* Цвет кнопок */
+    color: #000; /* Цвет текста кнопок */
+    border: none; /* Убираем границы кнопок */
+    border-radius: 5px; /* Скругленные края кнопок */
+    z-index: 1; /* Размещаем кнопки поверх карусели */
+    transition: opacity 0.5s ease;
+  }
+  
+  /* Кнопка "Назад" слева */
+  #prev {
+    left: 500px; /* Смещаем кнопку "Назад" внутрь контейнера на 10px */
+  }
+  
+  /* Кнопка "Вперед" справа */
+  #next {
+    right: 500px; /* Смещаем кнопку "Вперед" внутрь контейнера на 10px */
+  }
+  

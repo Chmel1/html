@@ -51,14 +51,14 @@ section
     box-sizing: border-box;
     text-align: center;
     border-radius: 20px;
-    border-color: rgb(211, 100, 100);
+    border-color: none;
     color: black;
 }
 
 
 .inforamation
 {
-    display:flex;
+    display:inline-block;
     justify-content: space-around; /* Пространство между секциями */
     flex-wrap: wrap; /* Разбивка секций по ширине экрана */
     
