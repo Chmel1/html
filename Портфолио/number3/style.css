@@ -1,0 +1,59 @@
+body {
+    background: linear-gradient(to right, slateblue, black);
+    font-family: 'Trebuchet MS';
+    color: white;
+    text-align: center;
+  }
+  
+  img {
+    border-radius: 75px;
+    animation: bounce 2s infinite;
+    margin-top: 20px;
+  }
+  
+  h2 {
+    font-size: 18px;
+  }
+  
+  a {
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    
+    display: block;
+    text-align: center;
+    margin: 10px;
+    color: slateblue;
+    
+    text-decoration: none;
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+    transition: transform 0.5s ease;
+  }
+  
+  a:hover {
+    color: blueviolet;
+    background: linear-gradient(to right, white, slateblue);
+    transform: scale(1.05);
+  }
+  
+  @keyframes bounce {
+    
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+    
+    40% {
+      transform: translateY(-10px);
+    }
+    
+    60% {
+      transform: translateY(-5px);
+    }
+  }
