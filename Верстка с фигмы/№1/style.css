@@ -1,13 +1,15 @@
 body
 {
-    
     font-family: "Montserrat";
+   margin-right: 1100px;
+    z-index: 12;
 }
 
 .header{
     display: flex;
     position: fixed;
-    margin-left: 20px;
+    margin-left: 50px;
+    margin-right: 500px;
     z-index: 10;
 }
 .icon{
@@ -24,31 +26,31 @@ body
     margin-top: 25px;
     z-index: 1;
 }
-.course, .about, .contacts{
+.course, .about, .contacts, .main{
     text-decoration: none;
     color:#3675AC;
     font-weight: bold;
     margin-top: 25px;
     font-size: 25px;
-    margin: 30px;
+    margin-left: 40px;
+    white-space: nowrap;
     z-index: 1;
 }
 .main
 {
-    text-decoration: none;
-    font-size: 25px;
-    margin-top: 25px;
+    text-decoration: none; 
     color:#000000;
     font-weight: bold;
-    margin: 30px;
-    z-index: 1;
+    z-index: 2;
 }
 .section-mid {
     display: flex;
      /* Распределяет контент и картинку по краям */
     align-items: center; /* Выравнивает элементы по вертикали относительно друг друга */
     padding: 20px; /* Внутренние отступы */
+    
     padding-top:120px ;
+    z-index: 2;
     
 }
 .section-textblock{
@@ -65,6 +67,7 @@ body
     letter-spacing: 2px;
     color:#3675AC;
     font-size: 64px;
+    width:540px ;
     margin-top: -100px;
     z-index: 1;
 }
@@ -78,11 +81,11 @@ body
 }
 .image{
     position: relative;
-    width: 620px;
+    width: 558px;
     height: auto;
     border-radius: 0 72px 0 72px;
     margin-top: 50px;
-    margin-left: 570px;
+    margin-left: 660px;
     z-index: 1;
 }
 .button{
@@ -90,8 +93,7 @@ body
     z-index: 1;
 }
 .icons{
-    opacity: 0.4;
-   
+    opacity: 0.4;   
 }
 .icon-1{
     position: absolute;
