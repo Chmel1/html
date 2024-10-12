@@ -1,0 +1,134 @@
+body
+{
+    font-family: "Montserrat";
+}
+
+.header{
+    display: flex;
+    
+    margin-left: 20px;
+    z-index: 1;
+}
+.icon{
+    margin-top: 18px;
+    margin-left: 84px;
+    width: 52.5px;
+    height: 61.68px;
+    z-index: 1;
+}
+.icon-name{
+    font-size: 24;
+    margin-right: 850px;
+    margin-left: 25px;
+    margin-top: 25px;
+    z-index: 1;
+}
+.course, .about, .contacts{
+    text-decoration: none;
+    color:#3675AC;
+    font-weight: bold;
+    margin-top: 25px;
+    font-size: 25px;
+    margin: 30px;
+    z-index: 1;
+}
+.main
+{
+    text-decoration: none;
+    font-size: 25px;
+    margin-top: 25px;
+    color:#000000;
+    font-weight: bold;
+    margin: 30px;
+    z-index: 1;
+}
+.section-mid {
+    display: flex;
+     /* Распределяет контент и картинку по краям */
+    align-items: center; /* Выравнивает элементы по вертикали относительно друг друга */
+    padding: 20px; /* Внутренние отступы */
+    
+}
+.section-textblock{
+    display: flex;
+    flex-direction: column; /* Размещает заголовок, текст и кнопку вертикально */
+    max-width: 60%;
+    margin-left: 104px;
+    margin-top: 100px;
+    
+}
+
+
+.caption{
+    letter-spacing: 2px;
+    color:#3675AC;
+    font-size: 64px;
+    margin-top: -100px;
+    z-index: 1;
+}
+.text{
+    width:520px;
+    font-size: 24px;
+    margin-top: -20px;
+    margin-bottom: 50px;
+    z-index: 1;
+}
+.image{
+    position: relative;
+    width: 620px;
+    height: auto;
+    border-radius: 0 72px 0 72px;
+    margin-top: 50px;
+    margin-left: 570px;
+    z-index: 1;
+}
+.button{
+    margin-left: 40px;
+    z-index: 1;
+}
+.icons{
+    opacity: 0.4;
+   
+}
+.icon-1{
+    position: absolute;
+    bottom: 15px;
+    left: 350px;
+    width: 250px;
+    height: 250px;
+    z-index: 0;
+}
+.icon-2{
+    position: absolute;
+    bottom: 50px;
+    left: 130px;
+    width: 250px;
+    height: 250px;
+    z-index: 0;
+
+}
+.icon-3{
+    position: absolute;
+    left: 550px;
+    bottom: 80px;
+    width: 250px;
+    height: 250px;
+    z-index: 0;
+}
+.icon-4{
+    position: absolute;
+    left: 800px;
+    bottom: 100px;
+    width: 250px;
+    height: 250px;
+    z-index: 0;
+}
+.icon-5{
+    position: absolute;
+    right: 475px;
+    bottom: 5px;    
+    width: 250px;
+    height: 250px;
+    rotate: 345deg;
+    z-index: 0;
+}
