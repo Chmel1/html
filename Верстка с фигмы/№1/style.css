@@ -1,13 +1,14 @@
 body
 {
+    
     font-family: "Montserrat";
 }
 
 .header{
     display: flex;
-    
+    position: fixed;
     margin-left: 20px;
-    z-index: 1;
+    z-index: 10;
 }
 .icon{
     margin-top: 18px;
@@ -47,6 +48,7 @@ body
      /* Распределяет контент и картинку по краям */
     align-items: center; /* Выравнивает элементы по вертикали относительно друг друга */
     padding: 20px; /* Внутренние отступы */
+    padding-top:120px ;
     
 }
 .section-textblock{
@@ -71,6 +73,7 @@ body
     font-size: 24px;
     margin-top: -20px;
     margin-bottom: 50px;
+    color: #081A2B;
     z-index: 1;
 }
 .image{
@@ -117,8 +120,8 @@ body
 }
 .icon-4{
     position: absolute;
-    left: 800px;
-    bottom: 100px;
+    left: 840px;
+    bottom: 80px;
     width: 250px;
     height: 250px;
     z-index: 0;
@@ -131,4 +134,67 @@ body
     height: 250px;
     rotate: 345deg;
     z-index: 0;
+}
+.icon-6{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left: 680px;
+    bottom: 275px;
+    z-index: 0;
+}
+.icon-7{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 980px;
+    bottom: 352px;
+    rotate: 33deg;
+    z-index: 0;
+}
+.icon-8{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    right: 175px;
+    bottom: 50px;
+    rotate: -45deg;
+}
+.icon-9{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 200px;
+    left:780px;
+}
+.icon-10{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    rotate: -50deg;
+    top: 100px;
+    left:980px;
+}
+.icon-11{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 100px;
+    left:580px;
+}
+.icon-12{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 100px;
+    top: 200px;
+    rotate: 45deg;
+}
+.icon-13{
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    left: 375px;
+    top: 375px;
+    rotate: -37deg;
 }
