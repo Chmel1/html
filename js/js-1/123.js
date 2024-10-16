@@ -227,8 +227,8 @@ alert (`Сложение: ${calculator.sum()}`);
 alert (`Произведение: ${calculator.mul()}`); */
 
 
-//Цепь вызовов
-let ladder =
+//Ступенька
+/* let ladder =
 {
     step:0,
     up()
@@ -271,6 +271,128 @@ ladder
 .up()
 .up()
 .down()
-.ShowStep()
+.ShowStep() */
+
+////////РАБОТА СО СТРОКАМИ///////////
+/* const name ="Александр";
+
+console.log(name[2])
+console.log(name.at(0))
+console.log(name.toLowerCase())
+console.log(name.toUpperCase())
+
+const msg = "Попробуем найти эщкере"
+console.log(msg.includes("эщкере"))
+/* console.log (msg.substring(0,4)) 
+console.log(msg.replaceAll("о","а"))
+
+const str = "+7 999 999 99 99"
+console.log(str.replaceAll( /\d/g,"#"))
+
+const str1 = "Зверя нет сильней китайца СТАРЫЙ БОГ соси нам яйца "
+
+console.log(str1.split(" "))
+
+let msg1 = "Здарова Старый"
+console.log(`Сообщение жо изменения: "${msg1}"`)
+
+msg1= msg1.
+trim().
+toUpperCase().
+slice(-6)
+console.log(`После изменения: "${msg1}"`) */
+
+/* const str = prompt("Ведите ваше имя")
+const clear_str = str.trim().toLowerCase()
+
+if(clear_str.length === 0)
+{
+    alert("Введите имя!")
+}
+if(clear_str.includes("админ"))
+{
+    alert("Нельзя такое")
+} */
+
+/////////МАСИВЫ/////////
+
+/* const arr = 
+[
+    'Привет',
+    100,
+    true,
+    {
+        name:"alex"
+    },
+    ()=> console.log("yshkere"),
+    [true,false,true]
+]
+arr.push('g','d')
+
+arr.unshift('g','d')
+
+console.log(arr)
+
+console.log(arr.pop())
+
+console.log(arr.shift())
+
+console.log(arr.join(', '))
+
+console.log(arr) */
+
+/* const arr1 = ['A','B','D']
+const arr2 = [...arr1]
 
 
+arr2[0]='t'
+
+console.log('arr1:',arr1)
+console.log('arr2:',arr2) */
+
+/* const arr1 = ['1','2']
+const arr2 = ['3','4']
+
+const AllArr = [...arr1,...arr2]
+console.log(AllArr) */
+
+const arr1 = ['1','2','3', ['1']]
+const arr2 = ['1','2','3', ['1']]
+
+const areArraysEqual = (array1, array2) =>
+{
+if(arr1.length !== arr2.length)
+{
+    return false
+}
+
+for (let i = 0;i<array1.length; i++)
+{
+    const value1 = array1[i]
+    const value2 = array2[i]
+
+    const areValuesArrays = Array.isArray(value1) && Array.isArray(value2)
+
+    if(areValuesArrays)
+    {
+        if( !areArraysEqual(value1,value2))
+        {
+            return false 
+        }
+        else
+        {
+            continue
+        }
+    }
+
+    if(value1 !== value2)
+    {
+        return false
+    }
+}
+
+return true
+
+}
+
+console.log(areArraysEqual(arr1,arr2))
