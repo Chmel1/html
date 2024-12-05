@@ -7,7 +7,10 @@
     <title><?php echo $title; ?></title>
 </head>
 <body>
+<div class="container mt-5">
     <header> 
         <a href="index.php">Главная</a>
         <a href="about.php">Про нас</a>
+        <a href="contact.php">Контакты</a>
     </header>
+    
