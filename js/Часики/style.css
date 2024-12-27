@@ -1,0 +1,23 @@
+body{
+    background-image: url(image/golden-frame-blue-background.jpg);
+    margin: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#clock-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#clock{
+    font-family: monospace;
+    font-size: 4.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: hsl(0, 9%, 96%);
+    backdrop-filter: blur(1.5px);
+    width: 100%;
+} 

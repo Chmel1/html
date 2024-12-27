@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mem</title>
+</head>
+<body>
+    <img src="image/im-just-a-chill-guy-meme.gif" alt="" id="imge">
+    <audio  src="image/audio/chill-guy.mp3" id="audioo"></audio>
+    <script>
+        const image = document.querySelector("#imge")
+        const audio = document.querySelector("#audioo")
+
+        image.addEventListener('click', ()=>{
+            if (audio.paused){
+                audio.play();
+            }else{
+                audio.pause();
+            }
+        }) 
+    </script>
+</body>
+</html>
